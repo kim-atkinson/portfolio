@@ -50,6 +50,7 @@ h1 {
 @media (max-width: 500px) {
   h1 {
     font-size: 6rem;
+    width: 90%;
   }
 }
 
@@ -68,6 +69,18 @@ h3 {
   margin-top: 2.4rem;
 }
 
+@media (max-width: 798px) {
+  h3 {
+    font-size: 3.2rem;
+  }
+}
+
+/* @media (max-width: 500px) {
+  h3 {
+    font-size: 2.8rem;
+  }
+} */
+
 p {
   margin-bottom: 20px;
 }
@@ -79,6 +92,19 @@ p {
   /* margin-bottom: 10px; */
 }
 
+@media screen and (max-width: 768px) {
+  .name {
+    font-size: 3.6rem;
+    /* margin-bottom: 10px; */
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .name {
+    font-size: 2.8rem;
+    /* margin-bottom: 10px; */
+  }
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -101,34 +127,20 @@ label {
   font-size: 3.2rem;
   color: #000000;
 }
-.nav {
+nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 1.8rem 0;
-  /* position: fixed; */
-  /* width: 100%; */
-  /* z-index: 1; */
-  top: 0;
 }
 
-.list {
-  list-style: none;
-  padding: 0;
-}
-
-.nav__list {
-  width: 100%;
-  margin: 0;
-  align-items: center;
+ul {
+  display: flex;
 }
 
 .nav__item {
   font-family: "Grotzec Cond Bold";
   font-size: 1.6rem;
   text-transform: uppercase;
-  padding-bottom: 2rem;
+  padding: 1.8rem 0;
 }
 
 .nav__item > a {
@@ -139,39 +151,6 @@ label {
 .nav__item > a:hover {
   color: #ffd958;
   /* border-bottom: 2px solid #000000; */
-}
-
-.collapsible__content {
-  max-height: 0;
-  overflow: hidden;
-  opacity: 0;
-}
-
-.collapsible--expanded .collapsible__content {
-  max-height: 100vh;
-  opacity: 1;
-}
-
-@media screen and (min-width: 768px) {
-  .nav__toggler {
-    display: none;
-  }
-
-  .nav__item {
-    border-bottom: none;
-  }
-
-  .nav__item + .nav__item {
-    margin-left: 2rem;
-  }
-
-  .nav__list {
-    /* padding-top: 20px; */
-    width: auto;
-    display: flex;
-    max-height: 100%;
-    opacity: 1;
-  }
 }
 
 /* Intro */
@@ -192,6 +171,12 @@ label {
 
 .about-heading {
   padding-bottom: 80px;
+}
+
+@media screen and (max-width: 768px) {
+  .about-heading {
+    padding-bottom: 40px;
+  }
 }
 
 /* Work */
@@ -302,6 +287,10 @@ button {
   border: 2px solid #ffd958;
 }
 
+.code {
+  color: #000000;
+}
+
 .code:hover {
   background-color: #ffd958;
   color: #000000;
@@ -372,16 +361,25 @@ button:hover {
   justify-content: space-between;
 }
 
+.linkedin {
+  margin-right: 8px;
+}
+
 @media (max-width: 500px) {
   .contact-info-bottom {
     flex-direction: column;
   }
 }
 
-.linkedin {
-  margin-right: 4px;
+.copyright-content {
+  text-align: center;
 }
+
+/* .linkedin {
+  margin-right: 4px;
+} */
 
 .social-links {
   display: flex;
+  justify-content: center;
 }
