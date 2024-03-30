@@ -49,8 +49,8 @@ h1 {
 
 @media (max-width: 500px) {
   h1 {
-    font-size: 6rem;
-    width: 100%;
+    font-size: 5.6rem;
+    /* width: 100%; */
   }
 }
 
